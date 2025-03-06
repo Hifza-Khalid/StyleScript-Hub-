@@ -3,11 +3,31 @@
 <head>
     <title>Border</title>
     <style>
-        * { margin: 0; padding: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
         #button1 {
-            height: 100px; width: 100px;
+            height: 100px; 
+            width: 150px;
             border: 5px dashed black;
             background-color: aquamarine;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+        }
+
+        #button1:hover {
+            background-color: lightblue;
+            border-color: navy;
         }
     </style>
 </head>
